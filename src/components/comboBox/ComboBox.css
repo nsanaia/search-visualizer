@@ -1,0 +1,116 @@
+.dropdown {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.dropdown__label {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    padding: 0.7em 2em 0.7em 0.8em;
+    border: 0;
+    border-radius: 0.5em;
+
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 200;
+    text-shadow: 1px 1px #148;
+}
+
+.dropdown__label.enabled {
+    background-color: #57b;
+    box-shadow: 0 0.3em #148;
+    cursor: pointer;
+}
+
+.dropdown__label.disabled {
+    background-color: #7697d3;
+    box-shadow: 0 0.3em #4b74b2;
+}
+
+
+.dropdown__label.enabled:hover {
+    background-color: #456ab5;
+    transform: translateY(0.1em);
+    box-shadow: 0 0.2em #148;
+}
+
+.dropdown__label.enabled.opened {
+    background-color: #456ab5;
+    transform: translateY(0.3em);
+    box-shadow: 0 0;
+}
+
+.dropdown__label::after {
+    content: "";
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    border: 0.3em solid;
+    border-color: white transparent transparent;
+}
+
+.dropdown__label.enabled.opened::after {
+    top: 0.7em;
+    border-color: transparent transparent white;
+}
+
+.dropdown__label-label {
+    font-size: 0.3rem;
+}
+
+.dropdown__label-value {
+    margin-left: 0.4em;
+}
+
+.dropdown__menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2.1em;
+
+    margin-top: 1em;
+
+    min-width: 100%;
+    max-height: 30em;
+    overflow-y: auto;
+    color: white;
+    border-radius: .5em;
+    background-color: #57b;
+    box-shadow: 0 0.3em #148;
+    font-weight: 200;
+    font-size: 0.6rem;
+
+}
+
+.dropdown__empty-submenu {
+    font-size: 0.5rem;
+    padding: .8em 1.5em;
+}
+
+.dropdown__submenu {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.dropdown__submenu > li {
+    padding: .5em 1.5em;
+    margin-top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.dropdown__submenu > li:hover {
+    background-color: #779EEFFF;
+}
+
+.dropdown__submenu > li.selected {
+    background-color: #148;
+}

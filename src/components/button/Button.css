@@ -1,0 +1,51 @@
+.button {
+    display: flex;
+
+    font-size: 0.6rem;
+    text-shadow: 1px 1px #148;
+    font-weight: 200;
+
+    padding: 0.7em 2em;
+    border: 0;
+    border-radius: .5em;
+
+    color: white;
+}
+
+.button > span.extra-right-margin {
+    margin-left: 0.6em;
+}
+
+.button.enabled {
+    background-color: #57b;
+    box-shadow: 0 0.3em #148;
+    cursor: pointer;
+}
+
+.button.disabled {
+    background-color: #7697d3;
+    box-shadow: 0 0.3em #4b74b2;
+}
+
+.button.enabled:hover {
+    background-color: #456ab5;
+    transform: translateY(0.1em);
+    box-shadow: 0 0.2em #148;
+}
+
+.button.enabled:active {
+    background-color: #456ab5;
+    transform: translateY(0.3em);
+    box-shadow: 0 0;
+}
+
+.button.enabled.checked {
+    background-color: #456ab5;
+    transform: translateY(0.3em);
+    box-shadow: 0 0;
+}
+
+.button.enabled.checked:hover {
+    background-color: #57b;
+}
+

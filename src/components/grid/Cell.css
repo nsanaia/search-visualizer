@@ -1,0 +1,75 @@
+:root {
+    --cell-size: 1.2em;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border-top: 1px solid var(--grid-border-color);
+    border-left: 1px solid var(--grid-border-color);
+}
+
+.cell--transition {
+    /*transition: .2s background;*/
+}
+
+.cell > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell__icon--normal {
+    width: 55% !important;
+}
+
+.cell__icon--small {
+    width: 40% !important;
+}
+
+.cell__icon--extra-small {
+    width: 30% !important;
+}
+
+.cell.light-border {
+    border-color: #f4f9ff;
+}
+
+.cell--wall {
+    background: #456AB5;
+}
+
+.cell--visiting {
+    background: #F8DD74;
+    transition: none;
+    border-color: #f4f9ff;
+}
+
+.cell--to-visit {
+    background: #dbebff;
+    border-color: #f4f9ff;
+}
+
+.cell--visited {
+    background: #c1ddff;
+    border-color: #f4f9ff;
+}
+
+.cell--path {
+    background: #F8DD74;
+}
+
+.full-width-height {
+    width: 100%;
+    height: 100%;
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
