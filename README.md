@@ -1,6 +1,6 @@
 # Search Visualizer
 
-An application written or React used for visualization of common search algorithms (DFS, BFS..)
+An application written on React used for visualization of common search algorithms (DFS, BFS..)
 
  You can access demo here - [https://nsanaia.github.io/search-visualizer/](https://nsanaia.github.io/search-visualizer/)
  
